@@ -1,4 +1,4 @@
-# Forge Model Differences by Index API of BIM360 / ACC - Nodejs
+# BIM 360/ACC Model Properties API: Compare Versions - Nodejs
 
 [![Node.js](https://img.shields.io/badge/Node.js-14.0-blue.svg)](https://nodejs.org/)
 [![npm](https://img.shields.io/badge/npm-6.14-blue.svg)](https://www.npmjs.com/)
@@ -16,7 +16,7 @@
 
 # Description
 
-This sample demonstrates the use case to check model versions differences by **Model Properties API** of BIM360 or ACC. It will visual the added items, removed items and updated items of versions. It will also tell if geometry is changed, if properties are changed and the changed properties list.
+This sample demonstrates the use case of comparing two versions of a model by **Model Properties API**. The result is visualized as added, removed and updated items from the previous version. Change can be  geometry as well as among properties.
 
 # Thumbnail
 <img src="./help/main.png" width="800"> 
@@ -32,8 +32,8 @@ This sample demonstrates the use case to check model versions differences by **M
 2. **BIM 360 or ACC Account**: must be Account Admin to add the app integration. [Learn about provisioning](https://forge.autodesk.com/blog/bim-360-docs-provisioning-forge-apps). 
 3. Upload two model versions to one folder in BIM360 or ACC.
 4. **Node.js**: basic knowledge with [**Node.js**](https://nodejs.org/en/).
-5. Basic knowledge with **html5**,**JavaScript**, **css**,**jQuery**, **bootstrap** etc. 
-6. Basic knowledge with **Data Management API with BIM360 or ACC**,**Forge Viewer** etc.s 
+5. Basic knowledge with **html5**,**JavaScript**, **css**,**jQuery**, **bootstrap**. 
+6. Basic knowledge with **Data Management API with BIM 360 or ACC**,and **Forge Viewer**.
 7. **ngrok**: Routing tool, [download here](https://ngrok.com/)
  
 ## Running locally
@@ -44,7 +44,7 @@ Clone this project or download it (this `nodejs` branch only). It's recommended 
 
     git clone https://github.com/Autodesk-Forge/forge-model.properties-versions.difference
 
-Install the required packages using `npm install`. Set the enviroment variables with your client ID, client secret, callback url and finally start it. Via command line, navigate to the folder where this repository was cloned and use the following:
+Install the required packages using `npm install`. Set the environment variables with your client ID, client secret, callback url and finally start it. Via command line, navigate to the folder where this repository was cloned and use the following:
 
 Mac OSX/Linux (Terminal)
 
@@ -62,7 +62,7 @@ Windows (use **Node.js command line** from Start menu)
     set FORGE_CALLBACK_URL=<<YOUR CALLBACK URL>>
     npm start
 
-OR, set enviroment variables at [launch.json](/.vscode/launch.json) for debugging.
+OR, set environment variables at [launch.json](/.vscode/launch.json) for debugging.
  
  ## Use Cases
 
@@ -82,15 +82,15 @@ OR, set enviroment variables at [launch.json](/.vscode/launch.json) for debuggin
 
 <img src="./help/switch.png" width="800"> 
 
-7. Click one item in {Added Items} table, the new item will be focused in right view, the corresponding location in left view will be also zoomed in (but no element becasue this item does not exist in old version)
+7. Click one item in {Added Items} table. The new item will be focused in the right view. The corresponding location in left view will be also zoomed in (but no element because this item does not exist in old version)
 
 <img src="./help/added.png" width="800"> 
  
-8. Click one item in {Removed Items} table, the old item will be focused in left view, the corresponding location in right view will be also zoomed in (but no element becasue this item has been removed in new version)
+8. Similarly, click one item in {Removed Items} table.  The old item will be focused in left view. The corresponding location in right view will be also zoomed in (but no element because this item has been removed in new version). 
 
 <img src="./help/removed.png" width="800"> 
 
-9. Click one item in {Changed Items} table, the item will be focused in both views. The table will also tell if geometry is changed, if properties are changed and the changed properties list. Open the **properties panel** in both Forge Viewers, check the changed values.
+9. Click one item in {Changed Items} table. The item will be focused in both views. The table will also tell if geometry is changed, if properties are changed, and the changed properties list. Open the **properties panel** in both Forge Viewers and check the changed values.
 
 <img src="./help/changed.png" width="800"> 
 
