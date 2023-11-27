@@ -1,3 +1,7 @@
+
+# DEPRECATED
+This repository has been deprecated and migrated to https://github.com/autodesk-platform-services/aps-model.properties-versions.difference
+
 # BIM 360/ACC Model Properties API: Compare Versions - Nodejs
 
 [![Node.js](https://img.shields.io/badge/Node.js-14.0-blue.svg)](https://nodejs.org/)
